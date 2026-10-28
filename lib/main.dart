@@ -178,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     const SizedBox(height: 16),
                     DropdownButtonFormField<String>(
-                      value: priority,
+                      initialValue: priority,
                       decoration: const InputDecoration(labelText: 'Priority'),
                       items: ['Low', 'Medium', 'High']
                           .map((p) => DropdownMenuItem(value: p, child: Text(p)))
